@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h2>Usando input</h2>
+  <p>
+    Aqui estamos usando un input de tipo file para subir un archivo
+  </p>
+  <form (ngSubmit)="onSubmit()">
+    
+    <input type="file" id="archivo" name="archivo"  #fileInput>
+
+    <button ion-button type="submit" color="secondary" outline block>Subir</button>
+  </form>
+<p *ngIf="dataUrl">
+  Descargar en {{dataUrl.foto}}
+</p>
+
+</ion-content>

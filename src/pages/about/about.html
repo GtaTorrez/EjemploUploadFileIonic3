@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      About
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h3>Usando File, FileChooser,FileTransfer</h3>
+  {{ fileUrl | json }}
+  <button ion-button color="primary" (click)="chooseFile()"  block>Escoger Archivo</button>
+  <button ion-button color="secondary" (click)="uploadFile()"  block>Subir Archivo</button>
+  {{ response | json }}
+</ion-content>
